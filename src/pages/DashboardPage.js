@@ -45,8 +45,8 @@ const DashboardPage = () => {
         className={`${styles.dashboard_logout} btn `}
         onClick={() => {
           localStorage.removeItem("token");
-          toast.success("Lougout Successfully");
           navigate("/");
+          toast.success("Lougout Successfully");
         }}
       >
         Logout
