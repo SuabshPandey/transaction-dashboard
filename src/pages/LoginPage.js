@@ -5,7 +5,7 @@ import TextField from "../common/formikComponents/TextField";
 import styles from "./login.module.css";
 import axiosInstance from "../auth/axiosInstance.js";
 import { loginSchema } from "../schemas/loginSchema";
-
+import toast from "react-hot-toast";
 const LoginPage = () => {
   const navigate = useNavigate();
 
@@ -43,19 +43,20 @@ const LoginPage = () => {
                     }
                   );
                   if (response.status === 200) {
-                    console.log("Login successful", response);
-                    console.log("TOken", response.data.data[0].jwt_token);
                     localStorage.setItem(
                       "token",
                       response.data.data[0].jwt_token
                     );
+                    toast.success(response.data.data[0].return_msg);
                     setIsLoading(false);
                     resetForm();
+
                     navigate("/dashboard");
                   }
                 } catch (err) {
                   if (err.response.status === 403) {
-                    console.log("Invalid credentials");
+                    toast.error("Invalid credentials");
+
                     setIsLoading(false);
                     resetForm();
                   }
