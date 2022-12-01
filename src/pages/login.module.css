@@ -1,0 +1,72 @@
+.login_main_div {
+  background-color: #f5f5f5;
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.login_card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  margin: 0 20px;
+}
+
+.logo_image_div {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.login_heading {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.8rem;
+  line-height: 30px;
+  /* identical to box height, or 125% */
+  text-align: center;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+.login_btn {
+  background: rgb(49, 58, 127);
+  border-radius: 5px;
+  width: 100%;
+  height: 50px;
+  border: none;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* .login_div {
+  background-color: #f5f5f5;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* .login_row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} */
