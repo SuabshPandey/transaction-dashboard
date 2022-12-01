@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.ma_t {
+  margin-top: 40px;
+}
+.ma_b {
+  margin-top: 40px;
+}
+.ma_l {
+  margin-top: 40px;
+}
+.ma_r {
+  margin-top: 40px;
+}
+
+.pa_t {
+  margin-top: 40px;
+}
+.pa_b {
+  margin-top: 40px;
+}
+.pa_l {
+  margin-top: 40px;
+}
+.pa_r {
+  margin-top: 40px;
+}
+
+.text_c {
+  text-align: center;
+}
